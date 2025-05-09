@@ -16,10 +16,8 @@ export default async function LocaleLayout({
     }
 
     return (
-        <html lang={locale}>
-            <body>
-                <NextIntlClientProvider>{children}</NextIntlClientProvider>
-            </body>
-        </html>
+        <div>
+            <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        </div>
     );
 }
