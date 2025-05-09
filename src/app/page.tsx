@@ -10,7 +10,7 @@ export default function Page() {
     useEffect(() => {
         const redirectBasedOnCountry = async () => {
             try {
-                const response = await axios.get('https://ipv4-check-perf.radar.cloudflare.com/api/info');
+                const response = await axios.get('https://api.country.is/');
                 if (response.data && response.data.country) {
                     setLocation(response.data.country);
                 } else {
